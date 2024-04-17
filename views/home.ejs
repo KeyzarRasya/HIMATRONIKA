@@ -4,46 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/output.css">
-    <title>Welcome HIRO!</title>
-    <style>
-        .all {
-            background-image: url('/asset/all.jpeg');
-        }
-        .logo{
-            background-image: url('/asset/logo.png');
-            background-position: center;
-            background-size: 100px;
-            margin-left: 20px;
-        }
-        .img-cust{
-            background-position: center;
-            background-size: cover;
-        }
-        
-    </style>
+    <title>Himpunan Mahasiswa Mekatronika dan Kecerdasan Buatan</title>
 </head>
+<style>
+    .logo-hima{
+        background-image: url("/asset/logo.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .kultron{
+        background-image: url("/asset/kultron.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .pp-img{
+        background-image: url("/asset/pp.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navi{
+        z-index: 999;
+    }
+</style>
 <body>
-    <div class="w-screen h-screen all img-cust">
-        <div class="nav h-1/6 w-screen bg-white opacity-75 flex p-3 justify-between">
-            <div class="w-28 h-full logo"></div>
-            <div class="w-3/6 h-full text-orange-500 text-lg flex justify-between font-bold items-center ">
-                <a class="hover:underline" href="">Tahun Lalu</a>
-                <a class="hover:underline" href="">Kabinet</a>
-                <a class="hover:underline" href="">Program Kerja</a>
-                <a class="hover:underline" href="">Tentang kami</a>
-            </div>
+    <div class="navi w-screen h-24 bg-orange-600 fixed top-0 shadow-xl flex justify-between items-center  text-white">
+        <div class="nama-hima w-1/6 flex justify-end font-bold text-xl">
+            <h1>HIMATRONIKA-AI</h1>
         </div>
-        <div id="content" class="h-5/6 flex flex-col justify-center items-center text-white w-screen transform -translate-x-full">
-            <h1 class="text-8xl font-bold">HIMATRONIKA-<span class="text-orange-600">AI</span></h1>
-            <h1 class="text-2xl">Himpunan Mahasiswa Mekatronika dan Kecerdasan Buatan</h1>
+        <ul class="flex w-3/6 justify-around text-lg">
+            <li><a href="">Program Kerja</a></li>
+            <li><a href="">Departemen</a></li>
+            <li><a href="">Produk Hukum</a></li>
+        </ul>
+    </div>
+    <!-- Halaman 1 -->
+    <div class="count1 h-screen w-screen flex bg-white">
+        <div class="logos w-2/6 h-screen flex justify-end items-center">
+            <div class="logo-hima w-80 h-80  "></div>
+        </div>
+        <div class="text-hima w-4/6 h-screen flex justify-center items-center flex-col">
+            <h1 class="text-orange-600 text-7xl font-bold">HIMATRONIKA-AI</h1>
+            <h1 class="text-xl font-bold">Himpunan Mahasiswa Mekatronika dan Kecerdasan Buatan</h1>
         </div>
     </div>
 
-    <script>
-        window.onload = function() {
-            document.getElementById('content').classList.add('transition-transform', 'duration-1000', 'ease-in-out');
-            document.getElementById('content').classList.remove('-translate-x-full');
-        };
-    </script>
+    <!-- Halaman 2 -->
+    <div class="count3 h-auto w-screen  flex flex-col">
+        <div class="heads flex flex-col text-3xl justify-center items-center h-1/6">
+            <h1 class="font-bold text-orange-600">Program kerja terlaksana</h1>
+            <hr class="bg-black h-1 w-96  mt-2">
+        </div>
+        <div class="mt-20 mx-auto  w-screen h-auto grid grid-cols-3 gap-10 content-center items-center justify-center justify-items-center">
+            <!-- Card Proker -->
+            <a href="" class="cards w-72 h-96 bg-white rounded-md shadow-xl p-2 duration-700 hover:-translate-y-3">
+                <div class="w-full h-5/6 pp-img"></div>
+                <h1 class="text-center font-bold text-orange-600 text-xl mt-2">METASTRO 2023</h1>
+            </a>
+            <!-- End Card Proker -->
+
+            <!-- Card Proker -->
+            <a href="" class="cards w-72 h-96 bg-white rounded-md shadow-xl p-2 duration-700 hover:-translate-y-3">
+                <div class="w-full h-5/6 pp-img"></div>
+                <h1 class="text-center font-bold text-orange-600 text-xl mt-2">METASTRO 2023</h1>
+            </a>
+            <!-- End Card Proker -->
+
+            <!-- Card Proker -->
+            <a href="" class="cards w-72 h-96 bg-white rounded-md shadow-xl p-2 duration-700 hover:-translate-y-3">
+                <div class="w-full h-5/6 pp-img"></div>
+                <h1 class="text-center font-bold text-orange-600 text-xl mt-2">METASTRO 2023</h1>
+            </a>
+            <!-- End Card Proker -->
+
+            <!-- Card Proker -->
+            <a href="" class="cards w-72 h-96 bg-white rounded-md shadow-xl p-2 duration-700 hover:-translate-y-3">
+                <div class="w-full h-5/6 pp-img"></div>
+                <h1 class="text-center font-bold text-orange-600 text-xl mt-2">METASTRO 2023</h1>
+            </a>
+            <!-- End Card Proker -->
+
+            <!-- Card Proker -->
+            <a href="" class="cards w-72 h-96 bg-white rounded-md shadow-xl p-2 duration-700 hover:-translate-y-3">
+                <div class="w-full h-5/6 pp-img"></div>
+                <h1 class="text-center font-bold text-orange-600 text-xl mt-2">METASTRO 2023</h1>
+            </a>
+            <!-- End Card Proker -->
+        </div>
+    </div>
+
+    <!-- Halaman 3 -->
+    <div class="count3 bg-white h-auto w-screen flex flex-col mt-10">
+        <div class="heads flex flex-col text-3xl justify-center items-center h-1/6    ">
+            <h1 class="font-bold text-orange-600">Kultron</h1>
+            <hr class="bg-black h-1 w-56 mt-2">
+        </div>
+
+        <div class="h-5/6 w-screen justify-around flex">
+            <!-- Card Kultron -->
+            <div class="card w-72 h-96 shadow-xl flex justify-center items-center flex-col pt-3">
+                <div class="kultron h-3/6 w-5/6 rounded-md">
+
+                </div>
+                <div class="h-2/6 w-5/6 flex flex-col">
+                    <p class="font-bold text-lg">Nasi Kepal Jeruk</p>
+                    <p class="text-base text-gray-700">Rp. 5000</p>
+                    <div class="self-center mt-3">
+                        <a class="h-10 self-center bg-green-500 w-full p-2 rounded-lg text-white" href="">Order via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Kultron -->
+
+            <!-- Card Kultron -->
+            <div class="card w-72 h-96 shadow-xl flex justify-center items-center flex-col pt-3">
+                <div class="kultron h-3/6 w-5/6 rounded-md">
+
+                </div>
+                <div class="h-2/6 w-5/6 flex flex-col">
+                    <p class="font-bold text-lg">Nasi Kepal Jeruk</p>
+                    <p class="text-base text-gray-700">Rp. 5000</p>
+                    <div class="self-center mt-3">
+                        <a class="h-10 self-center bg-green-500 w-full p-2 rounded-lg text-white" href="">Order via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Kultron -->
+
+            <!-- Card Kultron -->
+            <div class="card w-72 h-96 shadow-xl flex justify-center items-center flex-col pt-3">
+                <div class="kultron h-3/6 w-5/6 rounded-md">
+
+                </div>
+                <div class="h-2/6 w-5/6 flex flex-col">
+                    <p class="font-bold text-lg">Nasi Kepal Jeruk</p>
+                    <p class="text-base text-gray-700">Rp. 5000</p>
+                    <div class="self-center mt-3">
+                        <a class="h-10 self-center bg-green-500 w-full p-2 rounded-lg text-white" href="">Order via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End Card Kultron -->
+        </div>
+
+    </div>
 </body>
 </html>
